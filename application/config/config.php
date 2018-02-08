@@ -25,8 +25,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config_base_url = "";
 if($_SERVER['DOCUMENT_ROOT'] != FCPATH){
-  //$config_base_url = (isset($_SERVER['HTTPS']) ? "https://" : "http://") . $_SERVER['HTTP_HOST'].'/'.basename(FCPATH);
-   // $config_base_url = (isset($_SERVER['HTTPS']) ? "https://" : "http://") . $_SERVER['HTTP_HOST'].$_SERVER['SCRIPT_NAME'];
+  $config_base_url = (isset($_SERVER['HTTPS']) ? "https://" : "http://") . $_SERVER['HTTP_HOST'].'/'.basename(FCPATH);
+  //$config_base_url = (isset($_SERVER['HTTPS']) ? "https://" : "http://") . $_SERVER['HTTP_HOST'].$_SERVER['SCRIPT_NAME'];
 }
 $config['base_url'] = $config_base_url;
 
